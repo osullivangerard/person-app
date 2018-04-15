@@ -90,7 +90,6 @@ class App extends Component {
     }
 
     return (
-      <StyleRoot>
         <div className="App">
           <p className={classes.join(' ')}>This is really working!</p>
           <button
@@ -98,9 +97,8 @@ class App extends Component {
             onClick={this.togglePersonsHandler}>Toggle Persons</button>
           {persons}
         </div>
-      </StyleRoot>
     );
   }
 }
 
-export default Radium(App);
+export default App;
